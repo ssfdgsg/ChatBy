@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChatBy.SettingsPage"
+             Title="设置">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label 
+                Text="API 设置"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label Text="API URL" FontAttributes="Bold" Margin="0,10,0,0" />
+            <Entry x:Name="BaseUrlEntry" Placeholder="输入API URL" Text="{Binding BaseUrl}" />
+
+            <Label Text="API Key" FontAttributes="Bold" Margin="0,10,0,0" />
+            <Entry x:Name="ApiKeyEntry" Placeholder="输入API Key" Text="{Binding ApiKey}" IsPassword="True" />
+
+            <Label Text="模型" FontAttributes="Bold" Margin="0,10,0,0" />
+            <Entry x:Name="ModelEntry" Placeholder="输入模型名称 (例如: gpt-4)" Text="{Binding Model}" />
+
+            <Button 
+                Text="保存设置" 
+                Clicked="OnSaveClicked"
+                BackgroundColor="#512BD4"
+                TextColor="White"
+                Margin="0,20,0,0"
+                HorizontalOptions="Fill" />
+
+            <Button 
+                Text="测试连接" 
+                Clicked="OnTestConnectionClicked"
+                BackgroundColor="#909090"
+                TextColor="White"
+                Margin="0,10,0,0"
+                HorizontalOptions="Fill" />
+
+            <Label 
+                x:Name="StatusLabel" 
+                Text="" 
+                HorizontalOptions="Center"
+                Margin="0,20,0,0" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

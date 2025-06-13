@@ -1,0 +1,48 @@
+# .NET MAUI 项目的 .gitignore
+
+# 构建结果
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio 临时文件
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# 缓存文件
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# MAUI
+.mauipublish
+.mauicache
+
+# Rider
+.idea/
+*.sln.iml
+
+# 用户特定文件
+*.rsuser
+
+# 杂项
+.DS_Store
+Thumbs.bin
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+*.pfx
+*.snk
